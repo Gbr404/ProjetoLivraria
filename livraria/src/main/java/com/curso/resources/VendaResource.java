@@ -20,6 +20,9 @@ import com.curso.domains.Venda;
 import com.curso.domains.dtos.VendaDTO;
 import com.curso.services.VendaService;
 
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
+
 import jakarta.validation.Valid;
 
 @RestController

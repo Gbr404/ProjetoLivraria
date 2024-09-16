@@ -10389,3 +10389,462 @@ insert into pessoa (idcidade,cpf,created_at,email,end_bairro,end_cep,end_num,end
 2024-09-15T18:16:21.008-03:00  INFO 14896 --- [livraria] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
 2024-09-15T18:16:21.127-03:00  INFO 14896 --- [livraria] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
 2024-09-15T18:16:21.164-03:00  INFO 14896 --- [livraria] [restartedMain] com.curso.livraria.LivrariaApplication   : Started LivrariaApplication in 8.294 seconds (process running for 8.914)
+2024-09-15T23:53:49.938-03:00  INFO 4284 --- [livraria] [restartedMain] com.curso.livraria.LivrariaApplication   : Starting LivrariaApplication using Java 17.0.10 with PID 4284 (C:\Users\sunse\Desktop\projetolivraria\livraria\target\classes started by sunse in c:\Users\sunse\Desktop\projetolivraria)
+2024-09-15T23:53:49.944-03:00  INFO 4284 --- [livraria] [restartedMain] com.curso.livraria.LivrariaApplication   : The following 1 profile is active: "test"
+2024-09-15T23:53:50.032-03:00  INFO 4284 --- [livraria] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-15T23:53:50.033-03:00  INFO 4284 --- [livraria] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-15T23:53:50.901-03:00  INFO 4284 --- [livraria] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-15T23:53:51.006-03:00  INFO 4284 --- [livraria] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 92 ms. Found 8 JPA repository interfaces.
+2024-09-15T23:53:52.210-03:00  INFO 4284 --- [livraria] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-15T23:53:52.243-03:00  INFO 4284 --- [livraria] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-15T23:53:52.244-03:00  INFO 4284 --- [livraria] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-15T23:53:52.338-03:00  INFO 4284 --- [livraria] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-15T23:53:52.338-03:00  INFO 4284 --- [livraria] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2304 ms
+2024-09-15T23:53:52.382-03:00  INFO 4284 --- [livraria] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-15T23:53:52.653-03:00  INFO 4284 --- [livraria] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:livrariadb user=SA
+2024-09-15T23:53:52.657-03:00  INFO 4284 --- [livraria] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-15T23:53:52.672-03:00  INFO 4284 --- [livraria] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:livrariadb'
+2024-09-15T23:53:52.868-03:00  INFO 4284 --- [livraria] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-15T23:53:52.937-03:00  INFO 4284 --- [livraria] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-15T23:53:52.987-03:00  INFO 4284 --- [livraria] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-15T23:53:53.075-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BasicTypeReference@25c6a908
+2024-09-15T23:53:53.075-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BasicTypeReference@25c6a908
+2024-09-15T23:53:53.075-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Boolean -> org.hibernate.type.BasicTypeReference@25c6a908
+2024-09-15T23:53:53.075-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration numeric_boolean -> org.hibernate.type.BasicTypeReference@51bba38d
+2024-09-15T23:53:53.076-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.NumericBooleanConverter -> org.hibernate.type.BasicTypeReference@51bba38d
+2024-09-15T23:53:53.076-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration true_false -> org.hibernate.type.BasicTypeReference@1bc37dd5
+2024-09-15T23:53:53.077-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.TrueFalseConverter -> org.hibernate.type.BasicTypeReference@1bc37dd5
+2024-09-15T23:53:53.077-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration yes_no -> org.hibernate.type.BasicTypeReference@64ec9121
+2024-09-15T23:53:53.077-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.YesNoConverter -> org.hibernate.type.BasicTypeReference@64ec9121
+2024-09-15T23:53:53.077-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.BasicTypeReference@7472ea5d
+2024-09-15T23:53:53.078-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.BasicTypeReference@7472ea5d
+2024-09-15T23:53:53.079-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Byte -> org.hibernate.type.BasicTypeReference@7472ea5d
+2024-09-15T23:53:53.080-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary -> org.hibernate.type.BasicTypeReference@78599895
+2024-09-15T23:53:53.081-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte[] -> org.hibernate.type.BasicTypeReference@78599895
+2024-09-15T23:53:53.081-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [B -> org.hibernate.type.BasicTypeReference@78599895
+2024-09-15T23:53:53.082-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary_wrapper -> org.hibernate.type.BasicTypeReference@1bd2a165
+2024-09-15T23:53:53.082-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-binary -> org.hibernate.type.BasicTypeReference@1bd2a165
+2024-09-15T23:53:53.082-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration image -> org.hibernate.type.BasicTypeReference@2ffb1fba
+2024-09-15T23:53:53.084-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration blob -> org.hibernate.type.BasicTypeReference@74288d44
+2024-09-15T23:53:53.084-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Blob -> org.hibernate.type.BasicTypeReference@74288d44
+2024-09-15T23:53:53.084-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob -> org.hibernate.type.BasicTypeReference@2c3f35
+2024-09-15T23:53:53.084-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob_wrapper -> org.hibernate.type.BasicTypeReference@efb7fdc
+2024-09-15T23:53:53.085-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.BasicTypeReference@790aa776
+2024-09-15T23:53:53.085-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.BasicTypeReference@790aa776
+2024-09-15T23:53:53.085-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Short -> org.hibernate.type.BasicTypeReference@790aa776
+2024-09-15T23:53:53.085-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration integer -> org.hibernate.type.BasicTypeReference@49f847be
+2024-09-15T23:53:53.086-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration int -> org.hibernate.type.BasicTypeReference@49f847be
+2024-09-15T23:53:53.086-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Integer -> org.hibernate.type.BasicTypeReference@49f847be
+2024-09-15T23:53:53.086-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.BasicTypeReference@28cc1c23
+2024-09-15T23:53:53.086-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.BasicTypeReference@28cc1c23
+2024-09-15T23:53:53.086-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Long -> org.hibernate.type.BasicTypeReference@28cc1c23
+2024-09-15T23:53:53.087-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.BasicTypeReference@7d9c8379
+2024-09-15T23:53:53.087-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.BasicTypeReference@7d9c8379
+2024-09-15T23:53:53.087-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Float -> org.hibernate.type.BasicTypeReference@7d9c8379
+2024-09-15T23:53:53.087-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.BasicTypeReference@5181aaab
+2024-09-15T23:53:53.087-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.BasicTypeReference@5181aaab
+2024-09-15T23:53:53.087-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Double -> org.hibernate.type.BasicTypeReference@5181aaab
+2024-09-15T23:53:53.087-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_integer -> org.hibernate.type.BasicTypeReference@5a4fd292
+2024-09-15T23:53:53.088-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigInteger -> org.hibernate.type.BasicTypeReference@5a4fd292
+2024-09-15T23:53:53.088-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_decimal -> org.hibernate.type.BasicTypeReference@122af0fc
+2024-09-15T23:53:53.088-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigDecimal -> org.hibernate.type.BasicTypeReference@122af0fc
+2024-09-15T23:53:53.088-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration character -> org.hibernate.type.BasicTypeReference@b343e8b
+2024-09-15T23:53:53.088-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char -> org.hibernate.type.BasicTypeReference@b343e8b
+2024-09-15T23:53:53.088-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Character -> org.hibernate.type.BasicTypeReference@b343e8b
+2024-09-15T23:53:53.089-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration character_nchar -> org.hibernate.type.BasicTypeReference@57bc09b4
+2024-09-15T23:53:53.089-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration string -> org.hibernate.type.BasicTypeReference@73438a93
+2024-09-15T23:53:53.090-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.String -> org.hibernate.type.BasicTypeReference@73438a93
+2024-09-15T23:53:53.090-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nstring -> org.hibernate.type.BasicTypeReference@36ab2917
+2024-09-15T23:53:53.090-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration characters -> org.hibernate.type.BasicTypeReference@1c41992f
+2024-09-15T23:53:53.091-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char[] -> org.hibernate.type.BasicTypeReference@1c41992f
+2024-09-15T23:53:53.091-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [C -> org.hibernate.type.BasicTypeReference@1c41992f
+2024-09-15T23:53:53.091-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-characters -> org.hibernate.type.BasicTypeReference@2b87d2ba
+2024-09-15T23:53:53.092-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration text -> org.hibernate.type.BasicTypeReference@447fc24b
+2024-09-15T23:53:53.092-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ntext -> org.hibernate.type.BasicTypeReference@2b73b842
+2024-09-15T23:53:53.092-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration clob -> org.hibernate.type.BasicTypeReference@3b6bc4e2
+2024-09-15T23:53:53.092-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Clob -> org.hibernate.type.BasicTypeReference@3b6bc4e2
+2024-09-15T23:53:53.092-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nclob -> org.hibernate.type.BasicTypeReference@2eecd337
+2024-09-15T23:53:53.092-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.NClob -> org.hibernate.type.BasicTypeReference@2eecd337
+2024-09-15T23:53:53.093-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob -> org.hibernate.type.BasicTypeReference@143b313b
+2024-09-15T23:53:53.093-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob_char_array -> org.hibernate.type.BasicTypeReference@22bc2a56
+2024-09-15T23:53:53.093-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob_character_array -> org.hibernate.type.BasicTypeReference@4795b637
+2024-09-15T23:53:53.093-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob -> org.hibernate.type.BasicTypeReference@f28a099
+2024-09-15T23:53:53.093-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob_character_array -> org.hibernate.type.BasicTypeReference@4257eaae
+2024-09-15T23:53:53.093-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob_char_array -> org.hibernate.type.BasicTypeReference@17a9628
+2024-09-15T23:53:53.094-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> org.hibernate.type.BasicTypeReference@6bb4ac3e
+2024-09-15T23:53:53.094-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> org.hibernate.type.BasicTypeReference@6bb4ac3e
+2024-09-15T23:53:53.094-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDateTime -> org.hibernate.type.BasicTypeReference@2152e5b9
+2024-09-15T23:53:53.094-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDateTime -> org.hibernate.type.BasicTypeReference@2152e5b9
+2024-09-15T23:53:53.094-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDate -> org.hibernate.type.BasicTypeReference@5cad69a7
+2024-09-15T23:53:53.094-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDate -> org.hibernate.type.BasicTypeReference@5cad69a7
+2024-09-15T23:53:53.094-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalTime -> org.hibernate.type.BasicTypeReference@9337fcc
+2024-09-15T23:53:53.094-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalTime -> org.hibernate.type.BasicTypeReference@9337fcc
+2024-09-15T23:53:53.095-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> org.hibernate.type.BasicTypeReference@4728f788
+2024-09-15T23:53:53.095-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> org.hibernate.type.BasicTypeReference@4728f788
+2024-09-15T23:53:53.095-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@7161bdf9
+2024-09-15T23:53:53.095-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@46b61223
+2024-09-15T23:53:53.095-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> org.hibernate.type.BasicTypeReference@54e9d826
+2024-09-15T23:53:53.095-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> org.hibernate.type.BasicTypeReference@54e9d826
+2024-09-15T23:53:53.095-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeUtc -> org.hibernate.type.BasicTypeReference@54fdf184
+2024-09-15T23:53:53.096-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeWithTimezone -> org.hibernate.type.BasicTypeReference@288f1097
+2024-09-15T23:53:53.096-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@5ede38af
+2024-09-15T23:53:53.096-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> org.hibernate.type.BasicTypeReference@44ecf3ba
+2024-09-15T23:53:53.096-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> org.hibernate.type.BasicTypeReference@44ecf3ba
+2024-09-15T23:53:53.096-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@7fa65b72
+2024-09-15T23:53:53.096-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@2ffdf7b9
+2024-09-15T23:53:53.096-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration date -> org.hibernate.type.BasicTypeReference@49a9a9
+2024-09-15T23:53:53.096-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Date -> org.hibernate.type.BasicTypeReference@49a9a9
+2024-09-15T23:53:53.096-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration time -> org.hibernate.type.BasicTypeReference@231beb39
+2024-09-15T23:53:53.096-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Time -> org.hibernate.type.BasicTypeReference@231beb39
+2024-09-15T23:53:53.097-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timestamp -> org.hibernate.type.BasicTypeReference@6e2b49e3
+2024-09-15T23:53:53.097-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Timestamp -> org.hibernate.type.BasicTypeReference@6e2b49e3
+2024-09-15T23:53:53.097-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Date -> org.hibernate.type.BasicTypeReference@6e2b49e3
+2024-09-15T23:53:53.097-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar -> org.hibernate.type.BasicTypeReference@2eab2ba0
+2024-09-15T23:53:53.098-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Calendar -> org.hibernate.type.BasicTypeReference@2eab2ba0
+2024-09-15T23:53:53.098-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.BasicTypeReference@2eab2ba0
+2024-09-15T23:53:53.099-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_date -> org.hibernate.type.BasicTypeReference@6362cb3d
+2024-09-15T23:53:53.099-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_time -> org.hibernate.type.BasicTypeReference@1f5cb64b
+2024-09-15T23:53:53.099-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration instant -> org.hibernate.type.BasicTypeReference@2b8c9012
+2024-09-15T23:53:53.099-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Instant -> org.hibernate.type.BasicTypeReference@2b8c9012
+2024-09-15T23:53:53.099-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid -> org.hibernate.type.BasicTypeReference@5c0d48e8
+2024-09-15T23:53:53.099-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.UUID -> org.hibernate.type.BasicTypeReference@5c0d48e8
+2024-09-15T23:53:53.100-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration pg-uuid -> org.hibernate.type.BasicTypeReference@5c0d48e8
+2024-09-15T23:53:53.100-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-binary -> org.hibernate.type.BasicTypeReference@29c35b77
+2024-09-15T23:53:53.101-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-char -> org.hibernate.type.BasicTypeReference@53574eea
+2024-09-15T23:53:53.101-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration class -> org.hibernate.type.BasicTypeReference@1c145892
+2024-09-15T23:53:53.101-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Class -> org.hibernate.type.BasicTypeReference@1c145892
+2024-09-15T23:53:53.101-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration currency -> org.hibernate.type.BasicTypeReference@2a6809f0
+2024-09-15T23:53:53.101-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Currency -> org.hibernate.type.BasicTypeReference@2a6809f0
+2024-09-15T23:53:53.101-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Currency -> org.hibernate.type.BasicTypeReference@2a6809f0
+2024-09-15T23:53:53.102-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration locale -> org.hibernate.type.BasicTypeReference@19c3e729
+2024-09-15T23:53:53.102-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Locale -> org.hibernate.type.BasicTypeReference@19c3e729
+2024-09-15T23:53:53.102-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration serializable -> org.hibernate.type.BasicTypeReference@708adae5
+2024-09-15T23:53:53.102-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.io.Serializable -> org.hibernate.type.BasicTypeReference@708adae5
+2024-09-15T23:53:53.102-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timezone -> org.hibernate.type.BasicTypeReference@4e64ccae
+2024-09-15T23:53:53.102-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.TimeZone -> org.hibernate.type.BasicTypeReference@4e64ccae
+2024-09-15T23:53:53.102-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZoneOffset -> org.hibernate.type.BasicTypeReference@24a96b1b
+2024-09-15T23:53:53.102-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZoneOffset -> org.hibernate.type.BasicTypeReference@24a96b1b
+2024-09-15T23:53:53.102-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration url -> org.hibernate.type.BasicTypeReference@22552a08
+2024-09-15T23:53:53.102-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.net.URL -> org.hibernate.type.BasicTypeReference@22552a08
+2024-09-15T23:53:53.102-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration vector -> org.hibernate.type.BasicTypeReference@42e9155
+2024-09-15T23:53:53.102-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration row_version -> org.hibernate.type.BasicTypeReference@6c473cc2
+2024-09-15T23:53:53.113-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration object -> org.hibernate.type.JavaObjectType@55f0a6b3
+2024-09-15T23:53:53.113-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.JavaObjectType@55f0a6b3
+2024-09-15T23:53:53.115-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration null -> org.hibernate.type.NullType@789c8b3c
+2024-09-15T23:53:53.115-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_date -> org.hibernate.type.BasicTypeReference@23ac34ab
+2024-09-15T23:53:53.116-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_time -> org.hibernate.type.BasicTypeReference@6d73117f
+2024-09-15T23:53:53.116-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_timestamp -> org.hibernate.type.BasicTypeReference@4b033821
+2024-09-15T23:53:53.116-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar -> org.hibernate.type.BasicTypeReference@57da8f16
+2024-09-15T23:53:53.116-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_date -> org.hibernate.type.BasicTypeReference@1511f02a
+2024-09-15T23:53:53.116-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_time -> org.hibernate.type.BasicTypeReference@601ce31e
+2024-09-15T23:53:53.116-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_binary -> org.hibernate.type.BasicTypeReference@320c0d0c
+2024-09-15T23:53:53.116-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_serializable -> org.hibernate.type.BasicTypeReference@31ad9664
+2024-09-15T23:53:53.416-03:00  INFO 4284 --- [livraria] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-15T23:53:53.549-03:00 DEBUG 4284 --- [livraria] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NCharTypeDescriptor) replaced previous registration(CharTypeDescriptor)
+2024-09-15T23:53:53.550-03:00 DEBUG 4284 --- [livraria] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NVarcharTypeDescriptor) replaced previous registration(VarcharTypeDescriptor)
+2024-09-15T23:53:53.550-03:00 DEBUG 4284 --- [livraria] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(LongNVarcharTypeDescriptor) replaced previous registration(LongVarcharTypeDescriptor)
+2024-09-15T23:53:53.553-03:00 DEBUG 4284 --- [livraria] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NClobTypeDescriptor(DEFAULT)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
+2024-09-15T23:53:53.554-03:00 DEBUG 4284 --- [livraria] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(2005, ClobTypeDescriptor(STREAM_BINDING)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
+2024-09-15T23:53:53.556-03:00 DEBUG 4284 --- [livraria] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(TimestampUtcDescriptor) replaced previous registration(TimestampUtcDescriptor)
+2024-09-15T23:53:53.566-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.DurationType -> basicType@1(java.time.Duration,3015)
+2024-09-15T23:53:53.567-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> basicType@1(java.time.Duration,3015)
+2024-09-15T23:53:53.567-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> basicType@1(java.time.Duration,3015)
+2024-09-15T23:53:53.574-03:00 DEBUG 4284 --- [livraria] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@11d7acfd] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@4934d24f]
+2024-09-15T23:53:53.878-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : BasicTypeRegistry registration overwritten (ARRAY + org.hibernate.type.descriptor.java.spi.BasicCollectionJavaType@71b019fa); previous =`org.hibernate.type.BasicCollectionType@17306621`
+2024-09-15T23:53:53.878-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Set<integer> -> org.hibernate.type.BasicCollectionType@17306621
+2024-09-15T23:53:53.878-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Set<java.lang.Integer> -> org.hibernate.type.BasicCollectionType@17306621
+2024-09-15T23:53:54.960-03:00  INFO 4284 --- [livraria] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-15T23:53:54.961-03:00 DEBUG 4284 --- [livraria] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@11d7acfd] to SessionFactoryImplementor [org.hibernate.internal.SessionFactoryImpl@1357064a]
+2024-09-15T23:53:54.977-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists cidade cascade 
+2024-09-15T23:53:54.982-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists cliente cascade 
+2024-09-15T23:53:54.982-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists estado cascade 
+2024-09-15T23:53:54.983-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists funcionario cascade 
+2024-09-15T23:53:54.983-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists itemvenda cascade 
+2024-09-15T23:53:54.983-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists livro cascade 
+2024-09-15T23:53:54.984-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists perfis cascade 
+2024-09-15T23:53:54.984-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists pessoa cascade 
+2024-09-15T23:53:54.984-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists venda cascade 
+2024-09-15T23:53:55.001-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.SQL                        : 
+    create table cidade (
+        status integer,
+        id uuid not null,
+        idestado uuid,
+        nome varchar(255),
+        primary key (id)
+    )
+2024-09-15T23:53:55.010-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.SQL                        : 
+    create table cliente (
+        data_cad date,
+        status integer,
+        id uuid not null,
+        primary key (id)
+    )
+2024-09-15T23:53:55.012-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.SQL                        : 
+    create table estado (
+        id uuid not null,
+        nome varchar(255),
+        sigla varchar(255),
+        primary key (id)
+    )
+2024-09-15T23:53:55.016-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.SQL                        : 
+    create table funcionario (
+        data_contrato date,
+        status integer,
+        id uuid not null,
+        num_clt varchar(255),
+        primary key (id)
+    )
+2024-09-15T23:53:55.020-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.SQL                        : 
+    create table itemvenda (
+        qtd integer,
+        total float(53),
+        vlr_unitario float(53),
+        id uuid not null,
+        idlivro uuid,
+        idvenda uuid,
+        primary key (id)
+    )
+2024-09-15T23:53:55.023-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.SQL                        : 
+    create table livro (
+        id uuid not null,
+        autor varchar(255),
+        cod_barras varchar(255),
+        edicao varchar(255),
+        editora varchar(255),
+        titulo varchar(255),
+        primary key (id)
+    )
+2024-09-15T23:53:55.027-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.SQL                        : 
+    create table perfis (
+        person_type integer,
+        pessoa_id uuid not null
+    )
+2024-09-15T23:53:55.031-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.SQL                        : 
+    create table pessoa (
+        created_at date,
+        id uuid not null,
+        idcidade uuid,
+        cpf varchar(255) unique,
+        email varchar(255) unique,
+        end_bairro varchar(255),
+        end_cep varchar(255),
+        end_num varchar(255),
+        endereco varchar(255),
+        nome varchar(255),
+        password varchar(255),
+        rg varchar(255),
+        primary key (id)
+    )
+2024-09-15T23:53:55.039-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.SQL                        : 
+    create table venda (
+        data_venda date,
+        valor_total float(53),
+        id uuid not null,
+        idcliente uuid,
+        idfuncionario uuid,
+        observacao varchar(255),
+        ordemstatus integer array,
+        primary key (id)
+    )
+2024-09-15T23:53:55.042-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists cidade 
+       add constraint FKroyptlyuv6j0if22h77gd4ww 
+       foreign key (idestado) 
+       references estado
+2024-09-15T23:53:55.074-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists cliente 
+       add constraint FKa710hls1tg15o3d4ok5biathy 
+       foreign key (id) 
+       references pessoa
+2024-09-15T23:53:55.078-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists funcionario 
+       add constraint FKpjvvctvfjm69dvye3aea5k56f 
+       foreign key (id) 
+       references pessoa
+2024-09-15T23:53:55.081-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists itemvenda 
+       add constraint FKeaoru7rv670b0lp7htubp7vjn 
+       foreign key (idlivro) 
+       references livro
+2024-09-15T23:53:55.084-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists itemvenda 
+       add constraint FKiuaatbolrivca048qxpjv6qdw 
+       foreign key (idvenda) 
+       references venda
+2024-09-15T23:53:55.087-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists perfis 
+       add constraint FKlnesgnyiynjyqx8ks8cyhv6il 
+       foreign key (pessoa_id) 
+       references pessoa
+2024-09-15T23:53:55.090-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists pessoa 
+       add constraint FKn4p8knb7bhkax91scgokc0lnv 
+       foreign key (idcidade) 
+       references cidade
+2024-09-15T23:53:55.096-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists venda 
+       add constraint FKq9n2wcr7s8ws4493489dpfojm 
+       foreign key (idcliente) 
+       references cliente
+2024-09-15T23:53:55.098-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists venda 
+       add constraint FKn3apf3p12nxabfwq49ahnbckj 
+       foreign key (idfuncionario) 
+       references funcionario
+2024-09-15T23:53:55.107-03:00 TRACE 4284 --- [livraria] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@1357064a] for TypeConfiguration
+2024-09-15T23:53:55.107-03:00  INFO 4284 --- [livraria] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-15T23:53:55.732-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        estado
+        (nome, sigla, id) 
+    values
+        (?, ?, ?)
+2024-09-15T23:53:55.782-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        estado
+        (nome, sigla, id) 
+    values
+        (?, ?, ?)
+2024-09-15T23:53:55.789-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        cidade
+        (idestado, nome, status, id) 
+    values
+        (?, ?, ?, ?)
+2024-09-15T23:53:55.795-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        cidade
+        (idestado, nome, status, id) 
+    values
+        (?, ?, ?, ?)
+2024-09-15T23:53:55.802-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        cidade
+        (idestado, nome, status, id) 
+    values
+        (?, ?, ?, ?)
+2024-09-15T23:53:55.807-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        cidade
+        (idestado, nome, status, id) 
+    values
+        (?, ?, ?, ?)
+2024-09-15T23:53:55.819-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        pessoa
+        (idcidade, cpf, created_at, email, end_bairro, end_cep, end_num, endereco, nome, password, rg, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-09-15T23:53:55.822-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        funcionario
+        (data_contrato, num_clt, status, id) 
+    values
+        (?, ?, ?, ?)
+2024-09-15T23:53:55.831-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        perfis
+        (pessoa_id, person_type) 
+    values
+        (?, ?)
+2024-09-15T23:53:55.836-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        pessoa
+        (idcidade, cpf, created_at, email, end_bairro, end_cep, end_num, endereco, nome, password, rg, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-09-15T23:53:55.837-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        funcionario
+        (data_contrato, num_clt, status, id) 
+    values
+        (?, ?, ?, ?)
+2024-09-15T23:53:55.839-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        perfis
+        (pessoa_id, person_type) 
+    values
+        (?, ?)
+2024-09-15T23:53:55.848-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        pessoa
+        (idcidade, cpf, created_at, email, end_bairro, end_cep, end_num, endereco, nome, password, rg, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-09-15T23:53:55.849-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        cliente
+        (data_cad, status, id) 
+    values
+        (?, ?, ?)
+2024-09-15T23:53:55.851-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        perfis
+        (pessoa_id, person_type) 
+    values
+        (?, ?)
+2024-09-15T23:53:55.857-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        livro
+        (autor, cod_barras, edicao, editora, titulo, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+2024-09-15T23:53:55.863-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        venda
+        (idcliente, data_venda, idfuncionario, observacao, ordemstatus, valor_total, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2024-09-15T23:53:55.870-03:00 DEBUG 4284 --- [livraria] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        itemvenda
+        (idlivro, qtd, total, idvenda, vlr_unitario, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+2024-09-15T23:53:56.057-03:00  WARN 4284 --- [livraria] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-15T23:53:56.664-03:00  INFO 4284 --- [livraria] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-15T23:53:56.718-03:00  INFO 4284 --- [livraria] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-15T23:53:56.734-03:00  INFO 4284 --- [livraria] [restartedMain] com.curso.livraria.LivrariaApplication   : Started LivrariaApplication in 7.471 seconds (process running for 8.217)
+2024-09-15T23:54:58.598-03:00  INFO 4284 --- [livraria] [http-nio-8080-exec-10] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-15T23:54:58.599-03:00  INFO 4284 --- [livraria] [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-15T23:54:58.609-03:00  INFO 4284 --- [livraria] [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2024-09-15T23:55:00.601-03:00  INFO 4284 --- [livraria] [http-nio-8080-exec-6] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 1564 ms
+2024-09-15T23:56:17.272-03:00 DEBUG 4284 --- [livraria] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        l1_0.id,
+        l1_0.autor,
+        l1_0.cod_barras,
+        l1_0.edicao,
+        l1_0.editora,
+        l1_0.titulo 
+    from
+        livro l1_0 
+    where
+        l1_0.id=?

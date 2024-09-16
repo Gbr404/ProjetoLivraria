@@ -20,6 +20,9 @@ import com.curso.domains.Cliente;
 import com.curso.domains.dtos.ClienteDTO;
 import com.curso.services.ClienteService;
 
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
+
 import jakarta.validation.Valid;
 
 @RestController
