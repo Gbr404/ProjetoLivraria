@@ -6,6 +6,7 @@ import java.util.UUID;
 import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import com.curso.domains.Cliente;
@@ -19,6 +20,9 @@ public class ClienteService {
 
     @Autowired
     private ClienteRepository clienteRepo;
+
+    @Autowired
+    private BCryptPasswordEncoder encoder;
 
     public List<ClienteDTO> findAll(){
         return clienteRepo.findAll().stream().map(obj->new ClienteDTO(obj)).collect(Collectors.toList());
@@ -41,6 +45,7 @@ public class ClienteService {
 
     public Cliente create(ClienteDTO obDto){
         obDto.setId(null);
+        obDto.setPassword(encoder.encode(obDto.getPassword()));
         ValidaPorCPFeEmail(obDto);
         Cliente newObj = new Cliente(obDto);
         return clienteRepo.save(newObj);

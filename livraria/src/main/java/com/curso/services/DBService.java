@@ -1,6 +1,7 @@
 package com.curso.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import com.curso.domains.Cidade;
@@ -41,7 +42,10 @@ public class DBService {
     private VendaRepository vendaRepo;   
     
     @Autowired
-    private ItemvendaRepository itRepo;    
+    private ItemvendaRepository itRepo;
+    
+    @Autowired
+    private PasswordEncoder encoder;
     
 
     public void initDB()
@@ -60,10 +64,42 @@ public class DBService {
         cidadeRepo.save(cid03);
         cidadeRepo.save(cid04);
 
-        Funcionario fun01 = new Funcionario(null, "Luiza Fernanda", "12.123.123-1", "123.123.123.12", "Rua Terra Seca", "123", "Tudo Seco", "12.123-1234", "luiza@algumlugar.com", "123", "123456", cid01, Status.ATIVO);
-        Funcionario fun02 = new Funcionario(null, "Gabriel", "42.553.153-1", "188.193.123.12", "Rua Terra Seca Nova", "123", "Tudo Seco Dinovo", "12.123-1234", "gabriel@algumlugar.com", "123", "123456", cid03, Status.ATIVO);
-        funcRepo.save(fun01);
-        funcRepo.save(fun02);
+Funcionario fun01 = new Funcionario(
+    null, 
+    "Luiza Fernanda", 
+    "12.123.123-1", 
+    "123.123.123.12", 
+    "Rua Terra Seca", 
+    "123", 
+    "Tudo Seco", 
+    "12.123-1234", 
+    "luiza@algumlugar.com", 
+    encoder.encode("123"),  
+    "123456", 
+    cid01, 
+    Status.ATIVO
+);
+
+Funcionario fun02 = new Funcionario(
+    null, 
+    "Gabriel", 
+    "42.553.153-1", 
+    "188.193.123.12", 
+    "Rua Terra Seca Nova", 
+    "123", 
+    "Tudo Seco Dinovo", 
+    "12.123-1234", 
+    "gabriel@algumlugar.com", 
+    encoder.encode("123"),  
+    "123456", 
+    cid03, 
+    Status.ATIVO
+);
+
+// Salvando os objetos no repositório
+funcRepo.save(fun01);
+funcRepo.save(fun02);
+
 
         Cliente cli01 = new Cliente(null, "Luiza Fernanda Cliente", "13.143.923-1", "155.143.123.12", "Rua Terra Seca", "123", "Tudo Seco", "12.123-1234", "luiza_cliente@algumlugar.com", "123456", cid01, Status.ATIVO);
         cliRepo.save(cli01);
